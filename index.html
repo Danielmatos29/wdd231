@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Daniel Matos">
+    <meta name="description" content="Welcome to my Daniel's Site, where you'll find all needed information about me">
+
+    <script src="scripts/home-page.js" defer></script>
+    <link rel="stylesheet" href="styles/home-page.css">
+    <link rel="stylesheet" href="styles/home-page-larger.css">
+
+    <title>Daniel's Site</title>
+</head>
+<body>
+    <header>
+        <img src="images/home.svg" alt="Daniel's Site Logo">
+        <span>Daniel's Site</span>
+        <button id="ham-button" class="hamburger"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Chamber</a></li>
+            <li><a href="">Final</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Home</h1>
+
+        <div class="container">
+            <section class="About_Me">
+                <h2>About Me</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab aut quasi dicta recusandae fugit reiciendis animi repellendus. Placeat omnis, esse vero cumque necessitatibus quos obcaecati ipsum sed ea pariatur rerum.</p>
+            </section>
+
+            <section class="Student Photo">
+                <img src="images/profile-picture.jpeg" alt="Daniel's Profile Picture" width="300px">
+            </section>
+        </div>
+
+        <section class="Web-Certificates">
+            <button id="all-btn" class="all">All</button>
+            <button id="cse-courses" class="cse">CSE</button>
+            <button id="wdd-courses" class="wdd">WDD</button>
+        </section>
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href=""><img src="images/github-icon.svg" alt="Daniel's Github Repository" class="github_icon" width="50px"></a></li>
+                <li><a href=""><img src="images/linkedin-icon.svg" alt="Daniel's LinkedIn Profile" class="linkedin_icon" width="50px"></a></li>
+            </ul>
+        </nav>
+
+         &copy; <span id="currentyear"></span> <p>Daniel Matos, Dominican Republic.</p>
+         <span id="lastModified"></span>
+    </footer>
+</body>
+</html>
