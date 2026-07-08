@@ -31,30 +31,41 @@
         <div class="container">
             <section class="About_Me">
                 <h2>About Me</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab aut quasi dicta recusandae fugit reiciendis animi repellendus. Placeat omnis, esse vero cumque necessitatibus quos obcaecati ipsum sed ea pariatur rerum.</p>
+                <p class="about_p">Hello, nice to meet you! I'm Daniel Matos, a passionate software developer student, willing to learn so much more everyday. My favorites activities are to do calisthenics and play basketball with my friends. I consider myself as a workaholic and empathic person.</p>
             </section>
 
-            <section class="Student Photo">
-                <img src="images/profile-picture.jpeg" alt="Daniel's Profile Picture" width="300px">
+            <section class="StudentPhoto">
+                <h2>Student Photo</h2>
+                <img src="images/profile-picture.jpeg" alt="Daniel's Profile Picture" width="200px">
             </section>
         </div>
 
-        <section class="Web-Certificates">
-            <button id="all-btn" class="all">All</button>
-            <button id="cse-courses" class="cse">CSE</button>
-            <button id="wdd-courses" class="wdd">WDD</button>
+        <h2>Web Certificates</h2>
+        <section class="Web-Certificates" id="Certificates">
+            <div class="Web-Certificates-buttons">
+                <button id="all-btn" class="all">All</button>
+                <button id="cse-courses" class="cse">CSE</button>
+                <button id="wdd-courses" class="wdd">WDD</button>
+            </div>
+
+            <div class="courses" id="software-courses">
+
+            </div>
         </section>
     </main>
     <footer>
-        <nav>
+        <nav class="SocialMedia">
             <ul>
-                <li><a href=""><img src="images/github-icon.svg" alt="Daniel's Github Repository" class="github_icon" width="50px"></a></li>
-                <li><a href=""><img src="images/linkedin-icon.svg" alt="Daniel's LinkedIn Profile" class="linkedin_icon" width="50px"></a></li>
+                <li><a href="https://github.com/Danielmatos29/wdd231.git"><img src="images/github-icon.svg" alt="Daniel's Github Repository" class="github_icon" width="50px"></a></li>
+                <li><a href="https://www.linkedin.com/in/daniel-matos-79946b3ab/"><img src="images/linkedin-icon.svg" alt="Daniel's LinkedIn Profile" class="linkedin_icon" width="50px"></a></li>
             </ul>
         </nav>
 
-         &copy; <span id="currentyear"></span> <p>Daniel Matos, Dominican Republic.</p>
-         <span id="lastModified"></span>
+        <div class="credits">
+            <p>&copy; <span id="currentYear"></span></p>
+            <p id="lastModified"></p>
+            <p>Daniel Matos, Dominican Republic</p> 
+        </div>
     </footer>
 </body>
 </html>

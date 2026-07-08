@@ -25,4 +25,10 @@
         padding: 10px 100px 10px 100px;
         margin-left: 15px;
     }
+
+    .container {
+        display: grid;
+        grid-template-columns: 50em auto;
+        column-gap: 5px;
+    }
 }

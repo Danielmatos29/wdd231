@@ -60,7 +60,8 @@ header span {
     display: block;
     padding: .815rem 10px;
     color: #000000;
-    background-color: rgb(236, 194, 194);
+    font-weight: bold;
+    background-color: rgb(94, 135, 225);
     font-size: 1.05rem;
     text-decoration: none;
     border-bottom: 1px solid #ffffff;
@@ -73,4 +74,73 @@ header span {
 
 .navigation li.current{
     background-color: #eee;
+}
+
+.StudentPhoto, .About_Me {
+    background-color: #aaa;
+    padding-bottom: .2rem;
+    margin-bottom: .6rem;
+    border-radius: .2rem;
+}
+
+main h2 {
+    text-align: center;
+    color: #fff;
+    background-color: #000000;
+    margin: 0;
+    margin-bottom: .4rem;
+    border-radius: .2rem .2rem 0 0;
+}
+
+.StudentPhoto img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.SocialMedia ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    column-gap: 6px;
+}
+
+.Web-Certificates-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5px;
+}
+
+.Web-Certificates button {
+    cursor: pointer;
+    padding: .3rem 0 .3rem 0;
+}
+
+.courses {
+    display: grid;
+    margin-top: 5px;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+}
+
+.courses span {
+    text-align: center;
+    border: 1px solid #000000;
+}
+
+.courses span::before{
+    background-color: #f0f0f0;
+}
+.credits {
+    display: block;
+    text-align: center;
+}
+
+.about_p {
+    padding-left: .6rem;
+}
+
+.completed {
+    background-color: #efc253;
 }
