@@ -2,6 +2,12 @@
     font-family: "Roboto", sans-serif;
 }
 
+:root {
+    --nav-bg-color: rgb(94, 135, 225);
+    --nav-current-color: #2c7f95;
+
+}
+
 header {
     display: grid;
     grid-template-columns: 24px auto 44px;
@@ -61,7 +67,7 @@ header span {
     padding: .815rem 10px;
     color: #000000;
     font-weight: bold;
-    background-color: rgb(94, 135, 225);
+    background-color: var(--nav-bg-color);
     font-size: 1.05rem;
     text-decoration: none;
     border-bottom: 1px solid #ffffff;
@@ -140,6 +146,10 @@ main h2 {
 
 .about_p {
     padding-left: .6rem;
+}
+
+.navigation li a.current {
+    background-color: var(--nav-current-color);
 }
 
 .completed {

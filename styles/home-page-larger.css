@@ -18,17 +18,18 @@
 
     .navigation ul {
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
+        column-gap: 15px;
     }
 
     .navigation a {
-        padding: 10px 100px 10px 100px;
-        margin-left: 15px;
+        padding: 10px 40px;
+        margin-left: 0;
     }
 
     .container {
         display: grid;
-        grid-template-columns: 50em auto;
+        grid-template-columns: auto auto;
         column-gap: 5px;
     }
 }

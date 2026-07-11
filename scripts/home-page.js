@@ -7,25 +7,87 @@ nav_btn.addEventListener("click", () => {
 })
 
 const courses = [
-    "CSE110",
-    "WDD130",
-    "CSE111",
-    "CSE210",
-    "WDD131",
-    "WDD231",
-];
+    {
+        subject: 'CSE',
+        number: 110,
+        title: 'Introduction to Programming',
+        credits: 2,
+        certificate: 'Web and Computer Programming',
+        description: 'This course will introduce students to programming. It will introduce the building blocks of programming languages (variables, decisions, calculations, loops, array, and input/output) and use them to solve problems.',
+        technology: [
+            'Python'
+        ],
+        completed: true
+    },
+    {
+        subject: 'WDD',
+        number: 130,
+        title: 'Web Fundamentals',
+        credits: 2,
+        certificate: 'Web and Computer Programming',
+        description: 'This course introduces students to the World Wide Web and to careers in web site design and development. The course is hands on with students actually participating in simple web designs and programming. It is anticipated that students who complete this course will understand the fields of web design and development and will have a good idea if they want to pursue this degree as a major.',
+        technology: [
+            'HTML',
+            'CSS'
+        ],
+        completed: true
+    },
+    {
+        subject: 'CSE',
+        number: 111,
+        title: 'Programming with Functions',
+        credits: 2,
+        certificate: 'Web and Computer Programming',
+        description: 'CSE 111 students become more organized, efficient, and powerful computer programmers by learning to research and call functions written by others; to write, call , debug, and test their own functions; and to handle errors within functions. CSE 111 students write programs with functions to solve problems in many disciplines, including business, physical science, human performance, and humanities.',
+        technology: [
+            'Python'
+        ],
+        completed: true
+    },
+    {
+        subject: 'CSE',
+        number: 210,
+        title: 'Programming with Classes',
+        credits: 2,
+        certificate: 'Web and Computer Programming',
+        description: 'This course will introduce the notion of classes and objects. It will present encapsulation at a conceptual level. It will also work with inheritance and polymorphism.',
+        technology: [
+            'C#'
+        ],
+        completed: false
+    },
+    {
+        subject: 'WDD',
+        number: 131,
+        title: 'Dynamic Web Fundamentals',
+        credits: 2,
+        certificate: 'Web and Computer Programming',
+        description: 'This course builds on prior experience in Web Fundamentals and programming. Students will learn to create dynamic websites that use JavaScript to respond to events, update content, and create responsive user experiences.',
+        technology: [
+            'HTML',
+            'CSS',
+            'JavaScript'
+        ],
+        completed: true
+    },
+    {
+        subject: 'WDD',
+        number: 231,
+        title: 'Frontend Web Development I',
+        credits: 2,
+        certificate: 'Web and Computer Programming',
+        description: 'This course builds on prior experience with Dynamic Web Fundamentals and programming. Students will focus on user experience, accessibility, compliance, performance optimization, and basic API usage.',
+        technology: [
+            'HTML',
+            'CSS',
+            'JavaScript'
+        ],
+        completed: false
+    }
+]
 
-const CSE_courses = [
-    "CSE110",
-    "CSE111",
-    "CSE210",
-];
-
-const WDD_courses = [
-    "WDD130",
-    "WDD131",
-    "WDD231",
-];
+const CSEcourses = courses.filter(course => course.subject === "CSE");
+const WDDcourses = courses.filter(course => course.subject === "WDD");
 
 const allBtn = document.querySelector("#all-btn");
 const cseCoursesBtn = document.querySelector("#cse-courses");
@@ -35,43 +97,60 @@ const softwareCourses = document.querySelector("#software-courses");
 const webCertificateSection = document.querySelector("#Certificates")
 
 const listedCoursesText = document.createElement("p");
-listedCoursesText.textContent = `The total number of courses listed is ${courses.length * 2}`;
+
+let courseCredits = courses.map(course => course.credits);
+let total = courseCredits.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+
+listedCoursesText.textContent = `The total number of courses listed is ${total}`;
 
 function softwareDisplayAll(){
-    webCertificateSection.appendChild(listedCoursesText)
+    webCertificateSection.appendChild(listedCoursesText);
 
-    softwareCourses.innerHTML = `<span class="completed">${courses[0]}</span>
-    <span class="completed">${courses[1]}</span>
-    <span class="completed">${courses[2]}</span>
-    <span>${courses[3]}</span>
-    <span class="completed">${courses[4]}</span>
-    <span>${courses[5]}</span>`;
+    softwareCourses.innerHTML = "";
+    courses.forEach(course => {
+        const completed = course.completed ? "completed" : "";
+        
+        softwareCourses.innerHTML += `<span class="${completed}">${course["subject"]}${course["number"]}</span>`
+    });
 };
 
 softwareDisplayAll()
 
 allBtn.addEventListener("click", () => {
-    listedCoursesText.textContent = `The total number of courses listed is ${courses.length * 2}`;
+    courseCredits = courses.map(course => course.credits);
+    total = courseCredits.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+
+    listedCoursesText.textContent = `The total number of courses listed is ${total}`;
 
     softwareDisplayAll();
 });
 
 cseCoursesBtn.addEventListener("click", () => {
+    courseCredits = CSEcourses.map(course => course.credits)
+    total = courseCredits.reduce((accumulator, currentValue) => accumulator + currentValue, 0)
 
-    listedCoursesText.textContent = `The total number of courses listed is ${CSE_courses.length * 2}`;
+    listedCoursesText.textContent = `The total number of courses listed is ${total}`;
 
-    softwareCourses.innerHTML = `<span class="completed">${courses[0]}</span>
-        <span class="completed">${courses[2]}</span>
-        <span>${courses[3]}</span>`;
+    softwareCourses.innerHTML = "";
+    CSEcourses.forEach(course => {
+        const completed = course.completed ? "completed" : "";
+        
+        softwareCourses.innerHTML += `<span class="${completed}">${course["subject"]}${course["number"]}</span>`
+    });
 });
 
 wddCoursesBtn.addEventListener("click", () => {
+    courseCredits = WDDcourses.map(course => course.credits)
+    total = courseCredits.reduce((accumulator, currentValue) => accumulator + currentValue, 0)
 
-    listedCoursesText.textContent = `The total number of courses listed is ${WDD_courses.length * 2}`;
+    listedCoursesText.textContent = `The total number of courses listed is ${total}`;
 
-    softwareCourses.innerHTML = `<span class="completed">${courses[1]}</span>
-        <span class="completed">${courses[4]}</span>
-        <span>${courses[5]}</span>`;
+    softwareCourses.innerHTML = "";
+    WDDcourses.forEach(course => {
+        const completed = course.completed ? "completed" : "";
+        
+        softwareCourses.innerHTML += `<span class="${completed}">${course["subject"]}${course["number"]}</span>`
+    });
 });
 
 const last_modified = document.querySelector("#lastModified");
