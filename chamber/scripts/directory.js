@@ -26,7 +26,7 @@ const displayMembers = (members) =>{
 
     let cards = document.querySelector("#cards");
 
-    members.forEach(member => {
+    members.forEach((member, index) => {
         let card = document.createElement("section");
         let title = document.createElement("h2");
         let tag = document.createElement("p")
@@ -56,13 +56,19 @@ const displayMembers = (members) =>{
         container.setAttribute("class", "container");
         portrait.setAttribute("src", member.image);
         portrait.setAttribute("alt", `Portrait of ${member.name}`);
-        portrait.setAttribute("loading", "lazy");
         portrait.setAttribute("width", "100");
         portrait.setAttribute("height", "100");
 
         infoContainer.appendChild(email);
         infoContainer.appendChild(phone);
         infoContainer.appendChild(urlSpan);
+
+        if (index === 0) {
+            portrait.setAttribute("fetchpriority", "high");
+        }
+        else {
+            portrait.setAttribute("loading", "lazy")
+        };
 
         if (member.level == 2){
             card.setAttribute("class", "silver");
