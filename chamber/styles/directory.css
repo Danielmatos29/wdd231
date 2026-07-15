@@ -1,0 +1,118 @@
+/* see auto column grid in CSS in the .grid class rule */
+:root {
+    --nav-bg-color: rgb(94, 135, 225);
+    --nav-current-color: #2c7f95;
+}
+
+body {
+	font-family: Roboto, sans-serif;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    column-gap: 8px;
+    align-items: end;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-bottom: 3px;
+}
+
+header span {
+    font-size: 1.2rem;
+    color: black;
+}
+
+h2 {
+	margin: 1rem 0;
+}
+
+.grid {
+	display: grid;
+	grid-gap: 0.5rem;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+section {
+	margin: 0.5rem;
+	padding: 0.5rem;
+	background-color: #eee;
+	border: 1px solid rgb(0 0 0 / 10%);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+img {
+	width: auto;
+	max-width: 325px;
+	height: 200px;
+	border: 1px solid #111;
+}
+
+.hamburger {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.hamburger::before {
+    content: "\2630";
+    font-size: 1.6rem;
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+    font-size: 2rem;
+}
+.navigation {
+    padding-top: 4px;
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation a {
+    display: block;
+    padding: .815rem 10px;
+    color: #000000;
+    font-weight: bold;
+    background-color: var(--nav-bg-color);
+    font-size: 1.05rem;
+    text-decoration: none;
+    border-bottom: 1px solid #ffffff;
+    border-radius: 5px;
+}
+
+.navigation a:hover {
+    background-color: bisque;
+}
+
+.navigation li.current{
+    background-color: #eee;
+}
+
+.SocialMedia ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    column-gap: 6px;
+}
+
+.SocialMedia img {
+    border: none;
+}
