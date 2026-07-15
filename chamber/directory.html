@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="styles/directory-normalized.css">
     <link rel="stylesheet" href="styles/directory.css">
     <link rel="stylesheet" href="styles/directory-large.css">
 
@@ -29,32 +30,41 @@
         <span>LocalNexus Chamber of Commerce</span>
         <button id="ham-btn" class="hamburger" aria-label="Open main menu navigation"></button>
     </header>
-    <nav class="navigation">
+    <nav id="nav" class="navigation">
         <ul>
-            <li><a href="#"></a>Home</li>
-            <li><a href="#"></a>Directory</li>
-            <li><a href="#"></a>Join</li>
-            <li><a href="#"></a>Discover</li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#" class="current">Directory</a></li>
+            <li><a href="#">Join</a></li>
+            <li><a href="#">Discover</a></li>
         </ul>
     </nav>
     <main>
         <h1>Directory</h1>
-        <button id="grid_btn" class="grid_button">Grid</button>
-        <button id="list_btn" class="list_button">List</button>
+        <div class="displayButtons">
+            <button id="grid_btn" class="grid_button" aria-label="display images of the members">Grid</button>
+            <button id="list_btn" class="list_button" aria-label="display only crucial information">List</button>
+        </div>
         <div id="cards" class="grid"></div>
     </main>
     <footer>
-        <nav class="SocialMedia">
-            <ul>
-                <li><a href="https://github.com/Danielmatos29/wdd231.git"><img src="images/github-icon.svg" alt="Daniel's Github Repository" class="github_icon" width="50"></a></li>
-                <li><a href="https://www.linkedin.com/in/daniel-matos-79946b3ab/"><img src="images/linkedin-icon.svg" alt="Daniel's LinkedIn Profile" class="linkedin_icon" width="50"></a></li>
-            </ul>
-        </nav>
+        <div class="footerContainer">
+            <div class="contacts">
+                <p>info@LocalNexus.com</p>
+                <p>(849)-345-2345</p>
+            </div>
 
-        <div class="credits">
-            <p>&copy; <span id="currentYear"></span></p>
-            <p id="lastModified"></p>
-            <p>Daniel Matos, Dominican Republic</p> 
+            <nav class="SocialMedia">
+                <ul>
+                    <li><a href="https://github.com/Danielmatos29/wdd231.git"><img src="images/github-icon.svg" alt="Daniel's Github Repository" class="github_icon" width="50"></a></li>
+                    <li><a href="https://www.linkedin.com/in/daniel-matos-79946b3ab/"><img src="images/linkedin-icon.svg" alt="Daniel's LinkedIn Profile" class="linkedin_icon" width="50"></a></li>
+                </ul>
+            </nav>
+
+            <div class="credits">
+                <p>&copy; <span id="currentYear"></span></p>
+                <p id="lastModified"></p>
+                <p>Daniel Matos, WDD231, Dominican Republic</p> 
+            </div>
         </div>
     </footer>
 </body>

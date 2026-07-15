@@ -2,6 +2,8 @@
 :root {
     --nav-bg-color: rgb(94, 135, 225);
     --nav-current-color: #2c7f95;
+    --silver-membership: #C0C0C0;
+    --gold-membership: #D4AF37;
 }
 
 body {
@@ -21,12 +23,15 @@ header img {
     display: block;
     width: 100%;
     height: auto;
-    padding-bottom: 3px;
 }
 
 header span {
     font-size: 1.2rem;
     color: black;
+}
+
+h1 {
+    text-align: center;
 }
 
 h2 {
@@ -44,16 +49,11 @@ section {
 	padding: 0.5rem;
 	background-color: #eee;
 	border: 1px solid rgb(0 0 0 / 10%);
+    box-shadow: 5px 5px 8px rgba(77, 77, 77, 0.5);
+    border-radius: 4px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-}
-
-img {
-	width: auto;
-	max-width: 325px;
-	height: 200px;
-	border: 1px solid #111;
 }
 
 .hamburger {
@@ -72,7 +72,7 @@ img {
     font-size: 2rem;
 }
 .navigation {
-    padding-top: 4px;
+    padding-top: 7px;
     display: none;
 }
 
@@ -102,10 +102,6 @@ img {
     background-color: bisque;
 }
 
-.navigation li.current{
-    background-color: #eee;
-}
-
 .SocialMedia ul {
     display: flex;
     list-style-type: none;
@@ -115,4 +111,55 @@ img {
 
 .SocialMedia img {
     border: none;
+}
+
+.grid_button, .list_button {
+    font-size: 1.6rem;
+    padding: .6rem;
+}
+
+.displayButtons {
+    display: flex;
+    justify-content: center;
+    column-gap: 5px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 15px
+}
+
+.container p, .container span {
+    order: 2;
+    word-break: break-all;
+}
+
+.container img {
+    order: 1;
+}
+
+section h2 {
+    border-bottom: 1px solid #000000;
+}
+
+.navigation li a.current {
+    background-color: var(--nav-current-color);
+}
+
+.navigation li a.current:hover {
+    background-color: bisque;;
+}
+
+.footerContainer {
+    background-color: #eee;
+}
+
+.silver {
+    background-color: var(--silver-membership);
+}
+
+.gold {
+    background-color: var(--gold-membership);
 }

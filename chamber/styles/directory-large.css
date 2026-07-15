@@ -1,0 +1,35 @@
+@media only screen and (min-width: 38rem){
+    header, main, footer, nav {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    header {
+        grid-template-columns: 24px auto;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+    }
+
+    .navigation ul {
+        display: flex;
+        justify-content: center;
+        column-gap: 15px;
+    }
+
+    .navigation a {
+        padding: 10px 40px;
+        margin-left: 0;
+    }
+
+    .footerContainer {
+        display: flex;
+        background-color: #eee;
+        padding: 8px;
+    }
+}

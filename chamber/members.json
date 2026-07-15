@@ -5,49 +5,63 @@
             "tag": "3 Generations Getting There First.",
             "email": "info@schad.do",
             "phone": "(809) 221-8000",
-            "url": "https://www.schad.do/"
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeC-jN62SGKsnv7BkfqxaRnWIJVQ2iDkZoBGyCUnH9Hz3DP7C5-aFkkgs&s=10",
+            "url": "https://www.schad.do/",
+            "level": 2
         },
         {
             "name": "CATOJISA",
             "tag": "Integral Accounting & Payroll Solutions for SMEs.",
             "email": "info@catojisa.com",
             "phone": "(809) 221-8000",
-            "url": "https://catojisa.com/"
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN1Pk_Z7X8AVdi8CVT7-1P4AigdIjntUFm_e65B4dHAV5L9kxgQiYrv88&s=10",
+            "url": "https://catojisa.com/",
+            "level": 1
         },
         {
             "name": "Farmacias Carol",
             "tag": "Con Carol, estás más cerca de sentirte bien.",
             "email": "info@farmaciacarol.com",
             "phone": "(809) 563-6060",
-            "url": "https://www.farmaciacarol.com/"
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpQATKDd2L66DRzsNA47P-SWfljJk_NHtzHG35RqFtr3KKOiw0y1zHa1YP&s=10",
+            "url": "https://www.farmaciacarol.com/",
+            "level": 3
         },
         {
             "name": "Altice Dominicana",
             "tag": "Hechos de vida, hechos de fibra.",
             "email": "apps@altice.com.do",
             "phone": "(809) 859-6555",
-            "url": "https://www.altice.com.do/"
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRktidJftMwbitO_RwEPpOlV-LykY7gSMD608NM-_TT5g9UYFhmqNSiceM&s=10",
+            "url": "https://www.altice.com.do/",
+            "level": 1
         },
         {
             "name": "Catalonia Santo Domingo",
             "tag": "The best business hotel in town.",
             "email": "santodomingo.ventas@cataloniahotels.com",
             "phone": "(809) 685-0000",
-            "url": "https://www.cataloniahotels.com/en"
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToQmJLVZXUdnaFbT-lILwk79fLi-Hkt2mvAPr-kmOqRacF71feVVfjRqfT&s=10",
+            "url": "https://www.cataloniahotels.com/en",
+            "level": 1
         },
         {
             "name": "Banco Popular Dominicano",
             "tag": "A tu lado, siempre.",
             "email": "telebanco@bpd.com.do",
             "phone": "(809) 544-6555",
-            "url": "https://popularenlinea.com/"
+            "image": "https://impulsapopular.com/wp-content/uploads/2020/08/banco_popular-01.png",
+            "url": "https://popularenlinea.com/",
+            "level": 3
         },
         {
             "name": "Industria Core S.A.",
             "tag": "Innovación y excelencia en manufactura local.",
             "email": "r.taveras@core.com.do",
             "phone": "(809) 683-2777",
-            "url": "https://www.industriacore.com/"
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvP4hrsZV1swYzxmNL6sThEJRk1S1yxjTOazE4aTrVYq67qSbwyUy7pdHM&s=10",
+            "url": "https://www.industriacore.com/",
+            "level": 2
         }
     ]
 }
