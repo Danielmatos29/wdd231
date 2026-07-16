@@ -12,7 +12,7 @@ let members = [];
 
 async function getMembersData(){
     try{
-        const response = await fetch("./members.json");
+        const response = await fetch("./data/members.json");
 
         data = await response.json();
 
