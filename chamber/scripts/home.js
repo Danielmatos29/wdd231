@@ -155,7 +155,7 @@ function updateForecast(data) {
         let dayCard = document.createElement("div");
         dayCard.className = "forecast-card";
 
-        let dayTitle = document.createElement("h4");
+        let dayTitle = document.createElement("h3");
         // Fixed: changed '=' to ':' in object assignment
         dayTitle.textContent = new Date(day).toLocaleDateString("en-US", { weekday: "short" });
 
