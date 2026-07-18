@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="styles/directory.css">
     <link rel="stylesheet" href="styles/directory-large.css">
 
-    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/home.js" defer></script>
 
     <meta property="og:title" content="LocalNexus">
     <meta property="og:locale" content="en_US">
@@ -22,29 +22,46 @@
     <meta property="og:image" content="https://danielmatos29.github.io/wdd231/chamber/images/facebook-portrait.avif">
     <meta property="og:url" content="https://danielmatos29.github.io/wdd231/chamber/directory.html">
     <link rel="icon" href="images/favicon.ico">
-    <title>LocalNexus Club Directory</title>
+    <title>LocalNexus Club</title>
 </head>
 <body>
-    <header>
+   <header>
         <img src="images/favicon.ico" alt="LocalNexus logo that represents our business chamber of commerce" width="40" height="40" loading="lazy">
         <span>LocalNexus Club Directory</span>
         <button id="ham-btn" class="hamburger" aria-label="Open main menu navigation"></button>
     </header>
     <nav id="nav" class="navigation">
         <ul>
-            <li><a href="https://danielmatos29.github.io/wdd231/index.html">Home</a></li>
-            <li><a href="https://danielmatos29.github.io/wdd231/chamber/directory.html" class="current">Directory</a></li>
+            <li><a href="https://danielmatos29.github.io/wdd231/chamber/index.html" class="current">Home</a></li>
+            <li><a href="https://danielmatos29.github.io/wdd231/chamber/directory.html">Directory</a></li>
             <li><a href="#">Join</a></li>
             <li><a href="#">Discover</a></li>
         </ul>
     </nav>
     <main>
-        <h1>Directory</h1>
-        <div class="displayButtons">
-            <button id="grid_btn" class="grid-button" aria-label="display images of the members">Grid</button>
-            <button id="list_btn" class="list-button" aria-label="display only crucial information">List</button>
+        <h1>LocalNexus Club</h1>
+        <div class="hero-container">
+            <img src="images/LocalNexus-hero.png" alt="banner of localnexus club" class="hero-image" width="1200" height="600">
+            <button id="join-club" class="main-button" aria-label="Join to the LocalNexus Club">Join</button>
         </div>
-        <div id="cards" class="grid"></div>
+
+        <section id="spotlights">
+            
+        </section>
+        <section id="weatherSection" class="weatherSection">
+            <p>The current temperature in Santo Domingo is <span id="current-temp"></span></p>
+            <div id="weather-container"class="weather">
+
+            </div>
+        </section>
+        <section id="eventSection" class="currentEvent">
+            <h2>Come with us to our Educational Seminary!</h2>
+            <h3>Small Business Digital Workshop: Mastering SEO</h3>
+            <div class="eventContainer">
+                <img src="images/educational-seminary.jpg" alt="A representative image of our educational seminary" class="eventImg" loading="lazy">
+                <p>A lunchtime "lunch and learn" session where a guest expert teaches local business owners practical strategies to improve their Google search rankings and digital presence.</p>
+            </div>
+        </section>
     </main>
     <footer>
         <div class="footerContainer">
@@ -55,7 +72,7 @@
 
             <nav class="SocialMedia">
                 <ul>
-                <li><a href="https://github.com/Danielmatos29/wdd231.git"><img src="images/github-icon.svg" alt="Daniel's Github Repository" class="github_icon" width="50" height="50"></a></li>
+                    <li><a href="https://github.com/Danielmatos29/wdd231.git"><img src="images/github-icon.svg" alt="Daniel's Github Repository" class="github_icon" width="50" height="50"></a></li>
                     <li><a href="https://www.linkedin.com/in/daniel-matos-79946b3ab/"><img src="images/linkedin-icon.svg" alt="Daniel's LinkedIn Profile" class="linkedin_icon" width="50" height="50"></a></li>
                 </ul>
             </nav>

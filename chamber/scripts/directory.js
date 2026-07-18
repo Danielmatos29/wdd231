@@ -56,6 +56,7 @@ const displayMembers = (members) =>{
         container.setAttribute("class", "container");
         portrait.setAttribute("src", member.image);
         portrait.setAttribute("alt", `Portrait of ${member.name}`);
+        card.setAttribute("class", "card");
         portrait.setAttribute("width", "100");
         portrait.setAttribute("height", "100");
 

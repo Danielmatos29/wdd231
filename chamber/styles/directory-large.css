@@ -32,4 +32,35 @@
         grid-template-columns: repeat(3, 1fr);
         padding: 0;
     }
+
+
+    .weather {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        column-gap: 15px;
+    }
+
+    .eventContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .eventContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .eventImg {
+        width: 90%;
+        height: auto;
+        padding: 5px;
+        object-position: center;
+    }
+
+    .eventContainer p {
+        font-size: 1.2rem;
+        padding-top: 15%;
+    }
+
 }
