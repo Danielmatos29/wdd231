@@ -196,4 +196,5 @@ const buttonCourse = document.querySelector("#course");
 courses.forEach(course => {
     
             displayCourseDetails(course);
+
 });
