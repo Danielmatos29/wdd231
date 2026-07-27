@@ -110,7 +110,7 @@ function softwareDisplayAll(){
     courses.forEach(course => {
         const completed = course.completed ? "completed" : "";
         
-        softwareCourses.innerHTML += `<span class="${completed}">${course["subject"]}${course["number"]}</span>`
+        softwareCourses.innerHTML += `<button id="course" class="${completed}">${course["subject"]}${course["number"]}</button>`
     });
 };
 
@@ -135,7 +135,7 @@ cseCoursesBtn.addEventListener("click", () => {
     CSEcourses.forEach(course => {
         const completed = course.completed ? "completed" : "";
         
-        softwareCourses.innerHTML += `<span class="${completed}">${course["subject"]}${course["number"]}</span>`
+        softwareCourses.innerHTML += `<button id="course" class="${completed}">${course["subject"]}${course["number"]}</button>`
     });
 });
 
@@ -149,7 +149,7 @@ wddCoursesBtn.addEventListener("click", () => {
     WDDcourses.forEach(course => {
         const completed = course.completed ? "completed" : "";
         
-        softwareCourses.innerHTML += `<span class="${completed}">${course["subject"]}${course["number"]}</span>`
+        softwareCourses.innerHTML += `<button id="course" class="${completed}">${course["subject"]}${course["number"]}</button>`
     });
 });
 
@@ -168,3 +168,32 @@ last_modified.innerHTML = `Last modified: <span class="highlight">${new Intl.Dat
         dateStyle: "full"
     }
 ).format(today)}</span>`;
+
+const closeButton = document.querySelector("#close-button");
+const courseDetails = document.querySelector("#course-details");
+
+
+function displayCourseDetails(course) {
+  courseDetails.innerHTML = '';
+  courseDetails.innerHTML = `
+    <button id="closeModal">❌</button>
+    <h2>${course.subject} ${course.number}</h2>
+    <h3>${course.title}</h3>
+    <p><strong>Credits</strong>: ${course.credits}</p>
+    <p><strong>Certificate</strong>: ${course.certificate}</p>
+    <p>${course.description}</p>
+    <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+  `;
+  courseDetails.showModal();
+  
+  closeModal.addEventListener("click", () => {
+    courseDetails.close();
+  });
+}
+
+const buttonCourse = document.querySelector("#course");
+
+courses.forEach(course => {
+    
+            displayCourseDetails(course);
+});
