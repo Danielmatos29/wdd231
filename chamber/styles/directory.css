@@ -1,7 +1,7 @@
 /* see auto column grid in CSS in the .grid class rule */
 :root {
     --nav-bg-color: rgb(94, 135, 225);
-    --nav-current-color: #2c7f95;
+    --nav-current-color: #3aa4c1;
     --silver-membership: #C0C0C0;
     --gold-membership: #D4AF37;
 }
