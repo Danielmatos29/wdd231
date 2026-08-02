@@ -110,7 +110,19 @@ function softwareDisplayAll(){
     courses.forEach(course => {
         const completed = course.completed ? "completed" : "";
         
-        softwareCourses.innerHTML += `<button id="course" class="${completed}">${course["subject"]}${course["number"]}</button>`
+        softwareCourses.innerHTML += `<button class="${completed} course-button">${course["subject"]}${course["number"]}</button>`
+    });
+
+    let buttonCourse = document.querySelectorAll(".course-button");
+
+    buttonCourse.forEach(button => {
+        button.addEventListener("click", () => {
+            courses.forEach(course => {
+                if (button.innerHTML === `${course["subject"]}${course["number"]}`){
+                    displayCourseDetails(course);
+                }
+            }); 
+        });
     });
 };
 
@@ -135,7 +147,19 @@ cseCoursesBtn.addEventListener("click", () => {
     CSEcourses.forEach(course => {
         const completed = course.completed ? "completed" : "";
         
-        softwareCourses.innerHTML += `<button id="course" class="${completed}">${course["subject"]}${course["number"]}</button>`
+        softwareCourses.innerHTML += `<button class="${completed} course-button">${course["subject"]}${course["number"]}</button>`
+    });
+
+    let buttonCourse = document.querySelectorAll(".course-button");
+
+    buttonCourse.forEach(button => {
+        button.addEventListener("click", () => {
+            CSEcourses.forEach(course => {
+                if (button.innerHTML === `${course["subject"]}${course["number"]}`){
+                    displayCourseDetails(course);
+                }
+            }); 
+        });
     });
 });
 
@@ -149,7 +173,19 @@ wddCoursesBtn.addEventListener("click", () => {
     WDDcourses.forEach(course => {
         const completed = course.completed ? "completed" : "";
         
-        softwareCourses.innerHTML += `<button id="course" class="${completed}">${course["subject"]}${course["number"]}</button>`
+        softwareCourses.innerHTML += `<button class="${completed} course-button">${course["subject"]}${course["number"]}</button>`
+    });
+
+    let buttonCourse = document.querySelectorAll(".course-button");
+
+    buttonCourse.forEach(button => {
+        button.addEventListener("click", () => {
+            WDDcourses.forEach(course => {
+                if (button.innerHTML === `${course["subject"]}${course["number"]}`){
+                    displayCourseDetails(course);
+                }
+            }); 
+        });
     });
 });
 
@@ -190,11 +226,3 @@ function displayCourseDetails(course) {
     courseDetails.close();
   });
 }
-
-const buttonCourse = document.querySelector("#course");
-
-courses.forEach(course => {
-    
-            displayCourseDetails(course);
-
-});
