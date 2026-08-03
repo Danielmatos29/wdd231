@@ -1,0 +1,46 @@
+{
+    "memberships": [
+        {
+            "name": "Non Profit Membership Level",
+            "benefits": [
+                "Standard directory listing (contact details, phone, and website link)",
+                "Free access to monthly networking mixers and community roundtables",
+                "Ability to post community events on the chamber calendar",
+                "Access to member-to-member discounts and member job boards"
+            ],
+            "cost": 0
+        },
+        {
+            "name": "Bronze",
+            "benefits": [
+                "All Non-Profit benefits",
+                "Official ribbon-cutting support and grand opening promotion",
+                "Standard commercial directory listing",
+                "Inclusion in the quarterly new-member newsletter spotlight"
+            ],
+            "cost": 20
+        },
+        {
+            "name": "Silver",
+            "benefits": [
+                "All Bronze benefits",
+                "Enhanced directory profile (company logo, media gallery, and extended bio)",
+                "Priority search placement in the online directory",
+                "Category-specific rotating website banner ad",
+                "Discounted rates on chamber event sponsorships"
+            ],
+            "cost": 40
+        },
+        {
+            "name": "Gold",
+            "benefits": [
+                "All Silver benefits",
+                "Featured homepage logo placement and top-tier directory positioning",
+                "1 dedicated promotional email blast per year sent to the entire chamber list",
+                "VIP tickets and priority seating at major annual events and luncheons",
+                "Direct access to regional leadership roundtables and policy advocacy briefings"
+            ],
+            "cost": 50
+        }
+    ]
+}

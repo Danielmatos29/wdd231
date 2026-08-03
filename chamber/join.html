@@ -32,39 +32,62 @@
     </header>
     <nav id="nav" class="navigation">
         <ul>
-            <li><a href="https://danielmatos29.github.io/wdd231/chamber/index.html" class="current">Home</a></li>
+            <li><a href="https://danielmatos29.github.io/wdd231/chamber/index.html">Home</a></li>
             <li><a href="https://danielmatos29.github.io/wdd231/chamber/directory.html">Directory</a></li>
-            <li><a href="#">Join</a></li>
+            <li><a href="https://danielmatos29.github.io/wdd231/chamber/join.html" class="current">Join</a></li>
             <li><a href="#">Discover</a></li>
         </ul>
     </nav>
     <main>
-        <form method="GET" action="thankyou.html" class="joinForm">
-            <label>First Name:<input type="text" required name="firstName" title="Your First Name" autocomplete="given_name"></label>
-            <label>Last Name:<input type="text" required name="lastName" title="Your First Name" autocomplete="family-name"></label>
-            <label>Organizational Title:<input type="text" name="Organization" title="Your Organization Title" autocomplete="organization-title" pattern="[A-Za-z/s-]{7,}"></label>
+        <h1>Join</h1>
+        <div class="form-container">
+            <form method="GET" action="thankyou.html" class="joinForm">
+                <h2>Membership Application Form</h2>
+                <label>First Name: <input type="text" required name="firstName" title="Your First Name" autocomplete="given_name" class="fname"></label>
+                <label>Last Name: <input type="text" required name="lastName" title="Your First Name" autocomplete="family-name" class="lname"></label>
+                <label>Organizational Title: <input type="text" name="Organization" title="Your Organization Title" autocomplete="organization-title" pattern="[A-Za-z\s-]{7,}" class="organization"></label>
 
-            <label>Email Address:<input type="email" required name="emailAddress" title="Your Email Address" autocomplete="email" placeholder="test@example.com"></label>
-            <label>Phone Number:<input type="tel" required name="phoneNumber" title="Your Phone Number" autocomplete="tel"></label>
+                <label>Email Address: <input type="email" required name="emailAddress" title="Your Email Address" autocomplete="email" placeholder="test@example.com" class="email"></label>
+                <label>Phone Number: <input type="tel" required name="phoneNumber" title="Your Phone Number" autocomplete="tel" class="phone"></label>
 
-            <label>Business name: <input type="text" required name="businessName" title="Your Business Name" autocomplete="organization"></label>
+                <label>Business name: <input type="text" required name="businessName" title="Your Business Name" autocomplete="organization" class="business"></label>
 
-            <label>Membership:
-                <select name="membership">
-                    <option value="np">NP</option>
-                    <option value="bronze">Bronze Membership</option>
-                    <option value="silver">Silver Membership</option>
-                    <option value="gold">Gold Membership</option>
-                </select>
-            </label>
+                <label>Membership:
+                    <select name="membership" class="membership-select">
+                        <option value="np">NP</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="gold">Gold Membership</option>
+                    </select>
+                </label>
 
-            <label>Organization Description:<textarea name="description" title="Your Business Description" rows="4" cols="50"></textarea></label>
+                <label>Organization Description: <textarea name="description" title="Your Business Description" rows="4" cols="50" class="review"></textarea></label>
 
-            <input type="hidden" name="formLoadedTimestamp" id="formLoadedTimestamp">
+                <input type="hidden" name="formLoadedTimestamp" id="formLoadedTimestamp">
 
-            <button type="submit" id="joinChamber">Apply for Membership</button>
-        </form>
+                <input type="submit" value="Apply for Membership">
+            </form>
 
+            <div class="membership-container">
+                <h2>Membership Levels</h2>
+                <div class="non_profit_level">
+                    <span>Non Profit Membership Level</span>
+                    <button id="np-button" value="0" class="membershipButton">Learn More</button>
+                </div>
+                <div class="bronze_level">
+                    <span>Bronze Membership Level</span>
+                    <button id="bronze-button" value="1" class="membershipButton">Learn More</button>
+                </div>
+                <div class="silver_level">
+                    <span>Silver Membership Level</span>
+                    <button id="silver-button" value="2" class="membershipButton">Learn More</button>
+                </div>
+                <div class="gold_level">
+                    <span>Gold Membership Level</span>
+                    <button id="gold-button" value="3" class="membershipButton">Learn More</button>
+                </div>
+            </div>
+        </div>
         <dialog id="membership-details"></dialog>
     </main>
     <footer>

@@ -63,4 +63,8 @@
         padding-top: 15%;
     }
 
+    .form-container {
+        display: flex;
+        justify-content: center;
+    }
 }
