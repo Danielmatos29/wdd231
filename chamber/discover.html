@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Daniel Matos">
+        <meta name="description" content="Digital heartbeat of our city’s business community. We bridge the gap between passionate entrepreneurs, established enterprises, and local residents.">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="styles/directory-normalized.css">
+        <link rel="stylesheet" href="styles/directory.css">
+        <link rel="stylesheet" href="styles/discover-medium.css">
+        <link rel="stylesheet" href="styles/discover-large.css">
+        <link rel="stylesheet" href="styles/directory-large.css">
+
+        <script type="module" src="scripts/discover.js" defer></script>
+
+        <meta property="og:title" content="LocalNexus">
+        <meta property="og:locale" content="en_US">
+        <meta property="og:description" content="Join LocalNexus to network with premier businesses, access growth resources, and discover upcoming local events.">
+        <meta property="og:image" content="https://danielmatos29.github.io/wdd231/chamber/images/facebook-portrait.avif">
+        <meta property="og:url" content="https://danielmatos29.github.io/wdd231/chamber/directory.html">
+        <link rel="icon" href="images/favicon.ico">
+        <title>LocalNexus Club</title>
+    </head>
+    <body>
+        <header>
+            <img src="images/favicon.ico" alt="LocalNexus logo that represents our business chamber of commerce" width="40" height="40" loading="lazy">
+            <span>LocalNexus Club Directory</span>
+            <button id="ham-btn" class="hamburger" aria-label="Open main menu navigation"></button>
+        </header>
+        <nav id="nav" class="navigation">
+            <ul>
+                <li><a href="https://danielmatos29.github.io/wdd231/chamber/index.html">Home</a></li>
+                <li><a href="https://danielmatos29.github.io/wdd231/chamber/directory.html">Directory</a></li>
+                <li><a href="https://danielmatos29.github.io/wdd231/chamber/join.html">Join</a></li>
+                <li><a href="https://danielmatos29.github.io/wdd231/chamber/discover.html" class="current">Discover</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div id="visitor-message" class="visitor-message"></div>
+            <div id="allPlaces"></div>
+        </main>
+        <footer>
+            <div class="footerContainer">
+                <div class="contacts">
+                    <p>info@LocalNexus.com</p>
+                    <p>(849)-345-2345</p>
+                </div>
+
+                <nav class="SocialMedia">
+                    <ul>
+                    <li><a href="https://github.com/Danielmatos29/wdd231.git"><img src="images/github-icon.svg" alt="Daniel's Github Repository" class="github_icon" width="50" height="50"></a></li>
+                        <li><a href="https://www.linkedin.com/in/daniel-matos-79946b3ab/"><img src="images/linkedin-icon.svg" alt="Daniel's LinkedIn Profile" class="linkedin_icon" width="50" height="50"></a></li>
+                    </ul>
+                </nav>
+
+                <div class="credits">
+                    <p>&copy; <span id="currentYear"></span></p>
+                    <p id="lastModified"></p>
+                    <p>Daniel Matos, WDD231, Dominican Republic</p> 
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

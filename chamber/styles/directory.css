@@ -407,3 +407,51 @@ dialog[open]::backdrop {
   }
 }
 
+#allPlaces div{
+    margin: 1rem 8px;
+    border: 1px solid #999;
+    background-color : #eee;
+    border-radius: 8px;
+    overflow: hidden;
+
+    display: grid;
+    grid-template-areas:
+    "name"
+    "photograph" 
+    "description"
+    "location"
+    "LearnMore";
+}
+#allPlaces div h2 {
+    margin: 1rem 10px;
+    grid-area: name;
+}
+
+#allPlaces div img {
+    width: 100%;
+    grid-area: photograph;
+}
+
+#allPlaces div p {
+    margin: 1rem 10px;
+    grid-area: description;
+}
+
+#allPlaces div address {
+    margin: 1rem 10px;
+    grid-area: location;
+}
+
+
+#allPlaces div button {
+    height: 30px;
+    margin: 1rem 10px;
+    grid-area: LearnMore;
+}
+
+.visitor-message {
+    font-size: 1.2rem;
+    padding: .5rem;
+    text-align: center;
+    font-weight: bold;
+}

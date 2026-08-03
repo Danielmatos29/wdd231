@@ -1,0 +1,17 @@
+@media only screen and (min-width: 641px){
+    #allPlaces div{
+        grid-template-areas:
+        "name"
+        "photograph"
+        "photograph description"
+        "photograph location";
+    }
+
+    #allPlaces div figure img {
+        width: 300px;
+    }
+
+    #allPlaces div figure img:hover{
+        box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.5);
+    }
+}

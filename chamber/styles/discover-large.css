@@ -1,0 +1,15 @@
+@media only screen and (min-width: 1025px){
+    #allPlaces {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #allPlaces div figure img:hover{
+        box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.5);
+    }
+
+    #learnMoreBtn {
+        margin: 1rem 10px;
+        grid-area: LearnMore;
+    }
+}
