@@ -23,7 +23,7 @@ function displayItems(places){
         placeAddress.innerText = `${place.address}`;
         placeImage.setAttribute("src", `${place.image}`);
         placeImage.setAttribute("alt", `${place.alt}`);
-
+        placeImage.setAttribute("loading", "lazy");
         LearnMoreBtn.textContent = "Learn More"
         LearnMoreBtn.setAttribute("id", "learnMoreBtn");
 
