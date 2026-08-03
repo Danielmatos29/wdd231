@@ -285,9 +285,7 @@ form {
       appearance: none;
       transition: 
         opacity 0.3s ease, 
-        transform 0.3s ease, 
-        display 0.3s, 
-        overlay 0.3s;
+        transform 0.3s ease;
       cursor: pointer;
     }
 
@@ -380,8 +378,7 @@ dialog[open]::backdrop {
     border: none;
     transition: 
         opacity 0.3s ease,
-        transform 0.3s ease,
-    ;
+        transform 0.3s ease;
     cursor: pointer;
     border-radius: .6rem;
 }
