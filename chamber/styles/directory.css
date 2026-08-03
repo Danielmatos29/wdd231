@@ -285,8 +285,8 @@ form {
       transition: 
         opacity 0.3s ease, 
         transform 0.3s ease, 
-        display 0.3s allow-discrete, 
-        overlay 0.3s allow-discrete;
+        display 0.3s, 
+        overlay 0.3s;
       ;
       cursor: pointer;
     }
@@ -311,7 +311,7 @@ form {
   border-radius: 6px;
   cursor: pointer;
   
-  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .membershipButton:hover {
@@ -348,41 +348,33 @@ dialog {
   padding: 24px;
   max-width: 400px;
   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2);
-
-  opacity: 0;
-  transform: translateY(-20px) scale(0.95);
-
-  transition: 
-    opacity 0.3s ease, 
-    transform 0.3s ease, 
-    display 0.3s allow-discrete, 
-    overlay 0.3s allow-discrete;
 }
 
 dialog[open] {
-  opacity: 1;
-  transform: translateY(0) scale(1);
-}
-
-@starting-style {
-  dialog[open] {
-    opacity: 0;
-    transform: translateY(-20px) scale(0.95);
-  }
-}
-
-dialog::backdrop {
-  background-color: rgba(0, 0, 0, 0);
-  transition: background-color 0.3s ease, display 0.3s allow-discrete;
+  animation: dialogFadeIn 0.3s ease forwards;
 }
 
 dialog[open]::backdrop {
-  background-color: rgba(0, 0, 0, 0.5);
+  animation: backdropFadeIn 0.3s ease forwards;
 }
 
-@starting-style {
-  dialog[open]::backdrop {
+@keyframes dialogFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes backdropFadeIn {
+  from {
     background-color: rgba(0, 0, 0, 0);
+  }
+  to {
+    background-color: rgba(0, 0, 0, 0.5);
   }
 }
 
@@ -394,7 +386,6 @@ dialog[open]::backdrop {
     transition: 
         opacity 0.3s ease,
         transform 0.3s ease,
-        boxshadow 0.3s ease
     ;
     cursor: pointer;
     border-radius: .6rem;
@@ -405,21 +396,18 @@ dialog[open]::backdrop {
     transform: translateY(1px) scale(.95);
 }
 
-.membership-container div {
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
     opacity: 1;
     transform: translateY(0);
-    transition: 
-        opacity 1.5s ease,
-        transform 1.5s ease,
-        boxshadow 1.5s ease
-    ;
+  }
 }
 
-@starting-style{
-    .membership-container div{
-        opacity: 0;
-        transform: translateY(12px);
-    }
+.membership-container div {
+  animation: fadeInUp 1.5s ease forwards;
 }
-
 
