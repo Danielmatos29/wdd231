@@ -295,15 +295,15 @@ form {
         background-color: #373951;
         transform: translateY(-2.5px) scale(1);
     }
-    
+
     input:-webkit-autofill{
         -webkit-text-fill-color: #3D405B;
     }
 }
 
 .membershipButton {
-  background-color: #5fbf32;
-  color: #ffffff;
+  background-color: #6dd73b;
+  color: #000000;
   border: none;
   padding: 12px 20px;
   margin-left: .6rem;
