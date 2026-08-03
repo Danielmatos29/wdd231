@@ -232,6 +232,7 @@ form input, .membership-select, .review {
     padding: 1.5rem;
     margin: 1rem;
     background-color: #3aa4c1;
+    animation: fadeInUp 1.5s ease forwards;
 }
 
 form {
@@ -301,7 +302,7 @@ form {
 }
 
 .membershipButton {
-  background-color: #69d437;
+  background-color: #5fbf32;
   color: #ffffff;
   border: none;
   padding: 12px 20px;
@@ -328,10 +329,12 @@ form {
 dialog {
     width: 70%;
     height: 70%;
-    max-width: 600px;
     background-color: #ffffff;
-    border: 1px solid #000000;
-    border-radius: .24rem;
+    border: none;
+    border-radius: 12px;
+    padding: 24px;
+    max-width: 400px;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2);
 }
 
 dialog button {
@@ -340,14 +343,6 @@ dialog button {
     right: 23%;
     padding: .5rem 1rem;
     border: 1px solid rgba(0, 0, 0, 10%);
-}
-
-dialog {
-  border: none;
-  border-radius: 12px;
-  padding: 24px;
-  max-width: 400px;
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2);
 }
 
 dialog[open] {
@@ -405,9 +400,5 @@ dialog[open]::backdrop {
     opacity: 1;
     transform: translateY(0);
   }
-}
-
-.membership-container div {
-  animation: fadeInUp 1.5s ease forwards;
 }
 
