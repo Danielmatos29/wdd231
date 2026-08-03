@@ -214,11 +214,6 @@ section h2 {
     object-position: center;
 }
 
-form label {
-    display: block;
-    padding: .6rem;
-}
-
 .form-container {
     display: block;
 }
@@ -239,7 +234,8 @@ form {
   margin: 0 1rem 2%;
 }
 
-form label { 
+form label {
+    padding: .6rem;
   display: block; 
   font-size: .8rem; 
   color: purple; 
