@@ -1,0 +1,22 @@
+:root {
+    --main-color: #E5E7EB;
+    --main-bg-color: #166534;
+    --accent-color: #1C1917;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: var(--main-bg-color);
+    color: var(--main-color);
+}
+
+h1, h2 {
+    font-family: 'Bitter', 'Roboto Slab', 'Georgia', serif;
+}
+
+strong {
+    background-color: var(--accent-color);
+}
+.wireframe img {
+    width: 450px;
+}
