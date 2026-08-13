@@ -12,17 +12,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/calisthenicsFavicon.ico">
     <script src="scripts/project.js" defer></script>
     <title>Calisthenics & Bodyweight Training Vault</title>
 </head>
 <body>
     <header>
+        <img src="images/calisthenicsFavicon.ico" alt="Calisthenics Vault representative logo" class="favicon">
         <span>Calisthenics Vault</span>
         <nav id="nav-bar" class="navigation">
             <ul>
                 <li><a href="#" class="current">Home</a></li>
                 <li><a href="#">Library</a></li>
                 <li><a href="#">Outdoor Spots</a></li>
+                <li><a href="#">Join</a></li>
             </ul>
         </nav>
         <button class="hamburger" id="ham-btn" aria-label="Open menu navigation"></button>
@@ -44,7 +47,25 @@
         </dialog>
     </main>
     <footer>
+        <div class="footerContainer">
+            <div class="contacts">
+                <p>info@LocalNexus.com</p>
+                <p>(849)-345-2345</p>
+            </div>
 
+            <nav class="SocialMedia">
+                <ul>
+                    <li><a href="https://github.com/Danielmatos29/wdd231.git"><img src="images/github-icon.svg" alt="Daniel's Github Repository" class="github_icon" width="50" height="50"></a></li>
+                    <li><a href="https://www.linkedin.com/in/daniel-matos-79946b3ab/"><img src="images/linkedin-icon.svg" alt="Daniel's LinkedIn Profile" class="linkedin_icon" width="50" height="50"></a></li>
+                </ul>
+            </nav>
+
+            <div class="credits">
+                <p>&copy; <span id="currentYear"></span></p>
+                <p id="lastModified"></p>
+                <p>Daniel Matos, WDD231, Dominican Republic</p> 
+            </div>
+        </div>
     </footer>
 </body>
 </html>

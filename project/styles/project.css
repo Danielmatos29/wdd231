@@ -390,3 +390,227 @@ dialog#skillInfo span {
 .search-wrapper > label{
     font-size: 1rem;
 }
+
+/* ---------- Weather & Outdoor Spots ---------- */
+
+.weatherContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--gap);
+  margin-top: 1rem;
+}
+
+.weatherCard {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+}
+
+.weatherCard h3 {
+  margin: 0 0 0.25rem;
+  font-size: 1.4rem;
+}
+
+.weatherCard > p {
+  margin: 0.35rem 0;
+}
+
+.weather-desc {
+  text-transform: capitalize;
+  color: #6b573e;
+  margin: 0 0 0.75rem;
+}
+
+.weather-temp {
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 1;
+  margin: 0 0 0.75rem;
+}
+
+.verdict {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.verdict.good {
+  background: rgba(47, 82, 51, 0.12);
+  color: var(--color-accent);
+}
+
+.verdict.caution {
+  background: rgba(185, 134, 31, 0.15);
+  color: #8a641a;
+}
+
+.verdict.poor {
+  background: rgba(140, 58, 43, 0.12);
+  color: #8c3a2b;
+}
+
+.nearbySpots {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: var(--gap);
+}
+
+.park-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 1rem 1.25rem;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.park-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.park-card h4 {
+  margin: 0 0 0.25rem;
+  font-size: 1.05rem;
+}
+
+.park-card p {
+  margin: 0 0 0.5rem;
+  font-size: 0.9rem;
+  color: #6b573e;
+}
+
+.park-equip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.park-equip .tag {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--color-accent);
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  padding: 0.2rem 0.5rem;
+}
+
+.favicon {
+  width: fit-content;
+}
+
+.form-container {
+    display: block;
+}
+
+form input, .membership-select, .review {
+    width: 90%;
+}
+
+
+form {
+  margin: 0 1rem 2%;
+}
+
+form label {
+    padding: .6rem;
+  display: block; 
+  font-size: .8rem; 
+  color: #9c5c20; 
+  padding-top: .2rem; 
+} 
+
+form h3 { 
+  font-size: .9rem; 
+  color: #E07A5F; 
+  margin: 1.5rem 0 .2rem 0; 
+  border-bottom: 1px solid #eee; 
+} 
+
+form input[type=text], 
+form input[type=tel], 
+form input[type=date], 
+form input[type=email], 
+form select { 
+  display: block; 
+  margin: .1rem 0 1rem 0; 
+  padding: .3rem; 
+  border: 1px solid #999; 
+  border-radius: 4px; 
+  border-left-width: 5px; 
+  border-left-color: #555; 
+  font-size: 1rem; 
+  color: #3D405B; 
+  width: 90%; 
+} 
+
+form input:required { 
+  border-left-color: #266080; 
+} 
+
+form input:focus { 
+  border-left-color: black; 
+  outline: none; 
+} 
+
+form input:required:valid { 
+  border-left-color: green; 
+} 
+
+form input[type=submit] { 
+  border: none; 
+  text-align: center; 
+  background-color: var(--color-text); 
+  color: white; 
+  border-radius: 1rem; 
+  padding: .75rem 1.5rem; 
+  margin: 2rem 0; 
+  font-size: 1.2rem; 
+  -webkit-appearance: none; 
+  appearance: none; 
+  transition: opacity 0.3s ease, transform 0.3s ease; 
+  cursor: pointer; 
+} 
+
+form input[type=submit]:hover { 
+  background-color: #312316; 
+  transform: translateY(-2.5px) scale(1); 
+} 
+
+form input:-webkit-autofill { 
+  -webkit-text-fill-color: #3D405B; 
+}
+
+.joinTitle {
+  display: flex;
+  justify-content: center;
+}
+
+.contacts p {
+  display: block;
+  text-align: center;
+}
+
+.SocialMedia ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    column-gap: 6px;
+}
+
+.SocialMedia img {
+    border: none;
+}
+
+.footerContainer{
+  display: block;
+}
+
+.credits {
+    display: block;
+    text-align: center;
+}

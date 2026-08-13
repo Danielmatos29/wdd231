@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Riverside Bar Park",
+    "address": "Riverside Dr & 4th St",
+    "equipment": ["Bars", "Rings"]
+  },
+  {
+    "name": "Sunset Fitness Court",
+    "address": "Sunset Ave Community Park",
+    "equipment": ["Bars", "Floor"]
+  },
+  {
+    "name": "Lakeside Calisthenics Yard",
+    "address": "Lakeside Park, North Entrance",
+    "equipment": ["Bars", "Rings", "Floor"]
+  },
+  {
+    "name": "Downtown Street Workout Spot",
+    "address": "5th Ave Plaza",
+    "equipment": ["Bars"]
+  }
+]

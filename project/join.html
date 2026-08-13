@@ -15,7 +15,7 @@
 
     <link rel="icon" href="images/calisthenicsFavicon.ico">
     <script src="scripts/weather.js" defer></script>
-    <title>Outdoor Spot & Weather Finder</title>
+    <title>Join to Calisthenics Vault</title>
 </head>
 <body>
     <header>
@@ -25,22 +25,31 @@
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Library</a></li>
-                <li><a href="#" class="current">Outdoor Spots</a></li>
-                <li><a href="#">Join</a></li>
+                <li><a href="#">Outdoor Spots</a></li>
+                <li><a href="#" class="current">Join</a></li>
             </ul>
         </nav>
         <button class="hamburger" id="ham-btn" aria-label="Open menu navigation"></button>
     </header>
     <main>
-        <h1>Workout Spots</h1>
-        <div class="weatherContainer">
-            <section class="weatherCard" id="weatherLocation">
+        <h1 class="joinTitle">Join</h1>
+        <div class="form-container">
+            <form method="GET" action="thankyou.html" class="joinForm">
+                <h2>Membership Application Form</h2>
+                <label>First Name: <input type="text" required name="firstName" title="Your First Name" autocomplete="given-name" class="fname"></label>
+                <label>Last Name: <input type="text" required name="lastName" title="Your First Name" autocomplete="family-name" class="lname"></label>
+            
+                <label>Email Address: <input type="email" required name="emailAddress" title="Your Email Address" autocomplete="email" placeholder="test@example.com" class="email"></label>
+                <label>Phone Number: <input type="tel" required name="phoneNumber" title="Your Phone Number" autocomplete="tel" class="phone"></label>
 
-            </section>
+                <label>Business name: <input type="text" required name="businessName" title="Your Business Name" autocomplete="organization" class="business"></label>
 
-            <div class="nearbySpots" id="nearbyWorkoutSpots">
+                <label>Type your review: <textarea name="review" title="Calisthenics Vault Review" rows="4" cols="50" class="review"></textarea></label>
 
-            </div>
+                <input type="hidden" name="formLoadedTimestamp" id="formLoadedTimestamp">
+
+                <input type="submit" value="Become a Calisthenics Athlete!">
+            </form>
         </div>
     </main>
     <footer>
