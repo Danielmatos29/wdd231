@@ -12,39 +12,40 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;700;900&display=swap" rel="stylesheet">
-    <script src="scripts/project.js" defer></script>
-    <title>Calisthenics & Bodyweight Training Vault</title>
+    <script src="scripts/library&routine.js" defer></script>
+    <title>Calisthenics & Bodyweight Training Vault - library and routine</title>
 </head>
 <body>
     <header>
         <span>Calisthenics Vault</span>
         <nav id="nav-bar" class="navigation">
             <ul>
-                <li><a href="#" class="current">Home</a></li>
-                <li><a href="#">Library</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#" class="current">Library</a></li>
                 <li><a href="#">Outdoor Spots</a></li>
             </ul>
         </nav>
         <button class="hamburger" id="ham-btn" aria-label="Open menu navigation"></button>
     </header>
     <main>
-        <h1>Skill Roadmaps & Progressions</h1>
-        <div class="image-wrapper">
-            <picture>
-                <source srcset="images/hero-image.jpg" media="(min-width=750px)">
-                <img src="images/hero-image.webp" alt="Introduction to calisthenics handstand portrait">
-                <p>Pick a skill, pick your level, see the path forward</p>
-            </picture>
+        <h1>Exercise Library & Routine Builder</h1>
+        <div class="search-wrapper">
+            <label for="search">Search Exercise</label>
+            <input type="search" id="search" placeholder="Search by name, muscle, or type...">
         </div>
-        <div class="skillsContainer" id="allSkills">
-            
-        </div>
-        <dialog id="skillInfo">
-            <button id="closeBtn"></button>
-        </dialog>
-    </main>
-    <footer>
+        <div class="Routine_container">
+            <div class="cards-container"></div>
+            <aside class="routine-panel">
+                <h2>Current Routine</h2>
+                <ul id="routine-list" class="routine-list"></ul>
 
-    </footer>
+                <div class="routine-save">
+                    <input type="text" id="routine-name" placeholder="Name Your Routine">
+                    <button id="save-routine-btn" type="button">Save Routine</button>
+                </div>
+            </aside>
+        </div>
+    </main>
+    <footer></footer>
 </body>
 </html>

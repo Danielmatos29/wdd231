@@ -1,0 +1,235 @@
+{
+    "exercises" : [
+        {
+            "name": "Pull-up",
+            "primaryMuscleGroup": [
+            "Back",
+            "Biceps"
+            ],
+            "movementType": "Pull",
+            "thumbnail": "images/Pull-Up.webp",
+            "alt": "Person hanging from a bar mid pull-up, chin above the bar",
+            "defaultSets": 3,
+            "defaultReps": "8 reps"
+        },
+        {
+            "name": "Standard Push-up",
+            "primaryMuscleGroup": [
+            "Chest",
+            "Triceps"
+            ],
+            "movementType": "Push",
+            "thumbnail": "images/Push-Up.webp",
+            "alt": "Person in plank position performing a standard push-up",
+            "defaultSets": 3,
+            "defaultReps": "15 reps"
+        },
+        {
+            "name": "Bodyweight Air Squat",
+            "primaryMuscleGroup": [
+            "Legs",
+            "Glutes"
+            ],
+            "movementType": "Squat",
+            "thumbnail": "images/Bodyweight-Air-Squat.webp",
+            "alt": "Person squatting down with arms extended forward for balance",
+            "defaultSets": 4,
+            "defaultReps": "15 reps"
+        },
+        {
+            "name": "Ring Dips",
+            "primaryMuscleGroup": [
+            "Chest",
+            "Triceps"
+            ],
+            "movementType": "Push",
+            "thumbnail": "images/Ring-Dips.webp", 
+            "alt": "Person supported on gymnastic rings performing a dip",
+            "defaultSets": 3,
+            "defaultReps": "6 reps"
+        },
+        {
+            "name": "Parallel Bar Dips",
+            "primaryMuscleGroup": [
+            "Chest",
+            "Triceps"
+            ],
+            "movementType": "Push",
+            "thumbnail" : "images/Parallel-Bar-Dips.webp",
+            "alt": "Person supported on parallel bars performing a dip",
+            "defaultSets": 3,
+            "defaultReps": "10 reps"
+        },
+        {
+            "name": "Chin-up",
+            "primaryMuscleGroup": [
+            "Biceps",
+            "Back"
+            ],
+            "movementType": "Pull",
+            "thumbnail": "images/Chin-Up.webp",
+            "alt": "Person hanging from a bar with an underhand grip mid chin-up",
+            "defaultSets": 3,
+            "defaultReps": "8 reps"
+        },
+        {
+            "name": "Ring Rows",
+            "primaryMuscleGroup": [
+            "Back",
+            "Biceps"
+            ],
+            "movementType": "Pull",
+            "thumbnail": "images/Ring-Rows.webp",
+            "alt": "Person leaning back holding gymnastic rings performing a row",
+            "defaultSets": 3,
+            "defaultReps": "12 reps"
+        },
+        {
+            "name": "Inverted Bar Row",
+            "primaryMuscleGroup": [
+            "Back",
+            "Biceps"
+            ],
+            "movementType": "Pull",
+            "thumbnail": "images/Inverted-Bar-Row.webp",
+            "alt": "Person lying under a bar pulling their chest toward it",
+            "defaultSets": 3,
+            "defaultReps": "12 reps"
+        },
+        {
+            "name": "Pike Push-up",
+            "primaryMuscleGroup": [
+            "Shoulders",
+            "Triceps"
+            ],
+            "movementType": "Push",
+            "thumbnail": "images/Pike-Push-Up.webp",
+            "alt": "Person in an inverted V position performing a pike push-up",
+            "defaultSets": 3,
+            "defaultReps": "10 reps"
+        },
+        {
+            "name": "Ring Muscle-Up",
+            "primaryMuscleGroup": [
+            "Back",
+            "Chest"
+            ],
+            "movementType": "Pull/Push",
+            "thumbnail": "images/Ring-Muscle-Up.webp",
+            "alt": "Person transitioning from a pull-up to a dip on gymnastic rings",
+            "defaultSets": 3,
+            "defaultReps": "3 reps"
+        },
+        {
+            "name": "Bar Muscle-Up",
+            "primaryMuscleGroup": [
+            "Back",
+            "Chest"
+            ],
+            "movementType": "Pull/Push",
+            "thumbnail": "images/Bar-Muscle-Up.webp",
+            "alt": "Person transitioning from a pull-up to a dip on a bar",
+            "defaultSets": 3,
+            "defaultReps": "3 reps"
+        },
+        {
+            "name": "Hanging Leg Raise",
+            "primaryMuscleGroup": "Core",
+            "movementType": "Flexion",
+            "thumbnail": "images/Hanging-Leg-Raise.webp",
+            "alt": "Person hanging from a bar raising their legs toward horizontal",
+            "defaultSets": 3,
+            "defaultReps": "10 reps"
+        },
+        {
+            "name": "Plank Hold",
+            "primaryMuscleGroup": "Core",
+            "movementType": "Isometric",
+            "thumbnail": "images/Plank-Hold.webp",
+            "alt": "Person holding a straight-body plank position on forearms",
+            "defaultSets": 3,
+            "defaultReps": "60 seconds"
+        },
+        {
+            "name": "L-Sit Hold",
+            "primaryMuscleGroup": [
+            "Core",
+            "Shoulders"
+            ],
+            "movementType": "Isometric",
+            "thumbnail": "images/L-Sit.webp",
+            "alt": "Person supporting their body with arms extended and legs held out in an L shape",
+            "defaultSets": 3,
+            "defaultReps": "20 seconds"
+        },
+        {
+            "name": "Handstand Push-up (Wall Assisted)",
+            "primaryMuscleGroup": [
+            "Shoulders",
+            "Triceps"
+            ],
+            "movementType": "Push",
+            "thumbnail": "images/handstand.webp",
+            "alt": "Person in a wall-supported handstand performing a push-up",
+            "defaultSets": 3,
+            "defaultReps": "5 reps"
+        },
+        {
+            "name": "Pseudo Planche Push-up",
+            "primaryMuscleGroup": [
+            "Shoulders",
+            "Chest"
+            ],
+            "movementType": "Push",
+            "thumbnail": "images/Pseudo-Planche-Push-Up.webp",
+            "alt": "Person in a forward-leaning push-up position with hands near the hips",
+            "defaultSets": 3,
+            "defaultReps": "8 reps"
+        },
+        {
+            "name": "Diamond Push-up",
+            "primaryMuscleGroup": [
+            "Triceps",
+            "Chest"
+            ],
+            "movementType": "Push",
+            "thumbnail": "images/Diamond-Push-Up.webp",
+            "alt": "Person performing a push-up with hands close together forming a diamond shape",
+            "defaultSets": 3,
+            "defaultReps": "12 reps"
+        },
+        {
+            "name": "Archer Push-up",
+            "primaryMuscleGroup": [
+            "Chest",
+            "Arms"
+            ],
+            "movementType": "Push",
+            "thumbnail": "images/Archer-Push-Up.webp",
+            "alt": "Person performing a push-up shifted toward one extended arm",
+            "defaultSets": 3,
+            "defaultReps": "8 reps (per side)"
+        },
+        {
+            "name": "Bulgarian Split Squat (Bodyweight)",
+            "primaryMuscleGroup": [
+            "Legs",
+            "Glutes"
+            ],
+            "movementType": "Squat",
+            "thumbnail": "images/Bulgarian-Split-Squat.webp",
+            "alt": "Person performing a split squat with rear foot elevated on a bench",
+            "defaultSets": 3,
+            "defaultReps": "12 reps (per leg)"
+        },
+        {
+            "name": "Russian Twist",
+            "primaryMuscleGroup": "Core",
+            "movementType": "Rotation",
+            "thumbnail": "images/Russian-Twist.webp",
+            "alt": "Person seated leaning back rotating torso side to side",
+            "defaultSets": 3,
+            "defaultReps": "20 reps"
+        }
+    ]
+}

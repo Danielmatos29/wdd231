@@ -15,6 +15,7 @@ h1, h2 {
 }
 
 strong {
+    color: var(--main-color);
     background-color: var(--accent-color);
 }
 .wireframe img {

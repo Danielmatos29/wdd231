@@ -1,0 +1,68 @@
+{
+  "skills": [
+    {
+      "name": "Handstand",
+      "image": "images/Handstand.webp",
+      "alt" : "A person balancing upside down on their hands with their body straight and legs together.",
+      "what_it_is": "Balancing the full body upside down on your hands.",
+      "technique": "Stack wrist over shoulder over hip in one vertical line. Push the floor away (active shoulders), squeeze glutes and ribs down to avoid arching, spread fingers and use fingertip pressure to micro-balance.",
+      "get_better": "Practice wall holds daily for time under tension, drill wrist mobility/strength separately, and work 'shape' (hollow body) against a wall before chasing freestanding balance."
+    },
+    {
+      "name": "Muscle-Up",
+      "image": "images/Muscle-Up.webp",
+      "alt" : "A person performing a muscle-up, transitioning from a pull-up to a dip above the bar.",
+      "what_it_is": "Transitioning from a pull-up straight into a dip above the bar.",
+      "technique": "Pull the bar toward your hips (not your chest), lean forward aggressively at the top of the pull so your body can roll over the bar fast.",
+      "get_better": "Build raw pulling power (weighted pull-ups) and dip strength separately, then drill the transition with slow false-grip bar rollouts."
+    },
+    {
+      "name": "Push-Up",
+      "image": "images/Push-Up.webp",
+      "alt" : "A person performing a push-up, lowering their body towards the ground with arms bent.",
+      "what_it_is": "Pressing the body up from the ground, scaling toward one-arm control.",
+      "technique": "Keep a straight line head-to-heel, elbows about 45 degrees from torso, full range of motion (chest near-touches ground).",
+      "get_better": "Add instability/asymmetry gradually (archer, pseudo-planche lean) and strengthen the core so hips don't sag."
+    },
+    {
+      "name": "Pistol Squat",
+      "image": "images/Pistol-Squat.webp",
+      "alt" : "A person performing a pistol squat, standing on one leg while the other leg is extended straight out in front.",
+      "what_it_is": "A single-leg squat to full depth with the other leg extended.",
+      "technique": "Keep the heel planted, chest up, and control the descent -- it's an eccentric-strength and balance skill more than raw power.",
+      "get_better": "Work ankle mobility (heel lifting is the number one failure point) and practice slow negatives to build the eccentric strength needed."
+    },
+    {
+      "name": "L-Sit",
+      "image": "images/L-Sit.webp",
+      "alt" : "A person holding an L-sit position, supporting their body on their hands with legs extended straight out in front.",
+      "what_it_is": "Holding the body up on hands with legs extended straight out in front, parallel to the ground.",
+      "technique": "Push shoulders down away from ears, straight legs, pointed toes, posterior pelvic tilt (tuck hips under).",
+      "get_better": "Train shoulder depression (scapular strength) and hip flexor/hamstring flexibility -- tight hamstrings limit the straight-leg position more than most people expect."
+    },
+    {
+      "name": "Pull-Up",
+      "image": "images/Pull-Up.webp",
+      "alt" : "A person performing a pull-up, pulling their body up towards a bar with arms bent.",
+      "what_it_is": "Pulling the body from a dead hang to chin over the bar.",
+      "technique": "Full range of motion, avoid kipping/swinging, pull with the back (think elbows down and back, not just arms).",
+      "get_better": "Increase hang time and grip strength, add volume with strict reps before adding weight."
+    },
+    {
+      "name": "Planche",
+      "image": "images/Planche.webp",
+      "alt" : "A person holding a planche position, balancing their body horizontally on their hands with legs extended straight out behind them.",
+      "what_it_is": "A fully horizontal hold supported only by the hands, no legs touching ground.",
+      "technique": "Shoulders protracted (rounded forward, pushing the floor away), straight arms, hollow body with posterior pelvic tilt.",
+      "get_better": "This is the slowest skill to build -- prioritize shoulder/wrist prehab, and don't rush past tuck/straddle stages since wrist and shoulder injuries are common from progressing too fast."
+    },
+    {
+      "name": "Elbow Lever",
+      "image": "images/Elbow-Lever.webp",
+      "alt" : "A person holding an elbow lever position, balancing their body horizontally with elbows tucked into the abdomen/hips as the support point.",
+      "what_it_is": "Balancing the body horizontally with elbows tucked into the abdomen/hips as the support point.",
+      "technique": "Elbows dig into the lower ab/hip crease (not the ribs, which is unstable), lean weight forward over the hands.",
+      "get_better": "Practice finding the exact elbow placement first (this is mostly about finding the balance point), then build up hold time with legs tucked before extending them."
+    }
+  ]
+}

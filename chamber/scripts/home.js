@@ -23,7 +23,6 @@ async function getMembersData(){
     }
 }
 
-
 const displayMembers = (members) =>{
 
     const pool = [members[0], members[1], members[2], members[3], members[4], members[5], members[6]];
