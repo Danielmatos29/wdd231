@@ -1,12 +1,31 @@
 const skillsContainer = document.querySelector("#allSkills");
 const skillInfo = document.querySelector("#skillInfo");
-const nav_btn = document.querySelector("#ham-btn")
-const menu = document.querySelector("#nav-bar")
+const nav_btn = document.querySelector("#ham-btn");
+const menu = document.querySelector("#nav-bar");
+const header = document.querySelector("header");
+const body = document.querySelector("main");
+const mediaQuery = window.matchMedia("(max-width: 38rem)");
+
+// Function to handle DOM positioning and cleanup based on screen size
+function handleScreenChange(e) {
+  if (e.matches) {
+    body.prepend(menu);
+  } else {
+
+    header.insertBefore(menu, nav_btn);
+    nav_btn.classList.remove("active");
+    menu.classList.remove("show");
+  }
+}
 
 nav_btn.addEventListener("click", () => {
-    nav_btn.classList.toggle("active");
-    menu.classList.toggle("show");
-})
+  nav_btn.classList.toggle("active");
+  menu.classList.toggle("show");
+});
+
+mediaQuery.addEventListener("change", handleScreenChange);
+
+handleScreenChange(mediaQuery);
 
 async function getSkillsData()
 {
