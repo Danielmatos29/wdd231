@@ -123,4 +123,20 @@ async function init(){
     renderParks();
 }
 
+const last_modified = document.querySelector("#lastModified");
+const yearSpan = document.querySelector("#currentYear");
+
+const today = new Date();
+// OPTIMIZATION: Use the 'today' variable you already created instead of making a second Date object
+const currentYear = today.getFullYear(); 
+yearSpan.textContent = currentYear;
+
+// FIX: Added the missing closing quote after the class name "highlight"
+last_modified.innerHTML = `Last modified: <span class="highlight">${new Intl.DateTimeFormat(
+    "en-US",
+    {
+        dateStyle: "full"
+    }
+).format(today)}</span>`;
+
 init();
