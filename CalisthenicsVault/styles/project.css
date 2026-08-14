@@ -93,8 +93,8 @@ header span {
     font-size: 2rem;
 }
 
-.current {
-    color: var(--color-accent);
+li a.current {
+  color: var(--color-accent);
 }
 /* Hero */
 main {
