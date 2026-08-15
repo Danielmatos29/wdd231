@@ -68,7 +68,7 @@ header span {
 }
 
 .navigation a:hover {
-  color: #e16d59;;
+  color: #64dc7e;;
 }
 
 .hamburger {
@@ -94,7 +94,7 @@ header span {
 }
 
 li a.current {
-  color: #e16d59;
+  color: #64dc7e;
 }
 /* Hero */
 main {
