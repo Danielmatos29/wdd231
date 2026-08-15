@@ -68,7 +68,7 @@ header span {
 }
 
 .navigation a:hover {
-  color: var(--color-accent);
+  color: #e16d59;;
 }
 
 .hamburger {
