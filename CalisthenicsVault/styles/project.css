@@ -94,7 +94,7 @@ header span {
 }
 
 li a.current {
-  color: var(--color-accent);
+  color: #e16d59;
 }
 /* Hero */
 main {
